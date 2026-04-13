@@ -8,7 +8,7 @@
     <a href="daily/2026-04-13.md">📋 Latest Issue</a> · 
     <a href="#日报列表--archive">📁 Archive</a> · 
     <a href="#贡献指南--contributing">🤝 Contribute</a> · 
-    <a href="https://github.com/chenmozhe008/ai-film-creation-daily/issues">💬 Issues</a>
+    <a href="https://github.com/chenmozhe008/ai-film-daily/issues">💬 Issues</a>
   </p>
 </p>
 
@@ -150,9 +150,9 @@
 
 ### 可以贡献什么 / What You Can Contribute
 
-- 💡 **推荐信息源** — 发现好的 AI 创作信息源？提 [Issue](https://github.com/chenmozhe008/ai-film-creation-daily/issues) 告诉我们（RSS 源、公众号、YouTube 频道、X 账号等）
+- 💡 **推荐信息源** — 发现好的 AI 创作信息源？提 [Issue](https://github.com/chenmozhe008/ai-film-daily/issues) 告诉我们（RSS 源、公众号、YouTube 频道、X 账号等）
 - ✏️ **内容纠错** — 日报内容有误？随时指出
-- 📊 **栏目建议** — 想新增或调整栏目？在 [Discussions](https://github.com/chenmozhe008/ai-film-creation-daily/discussions) 里讨论
+- 📊 **栏目建议** — 想新增或调整栏目？在 [Discussions](https://github.com/chenmozhe008/ai-film-daily/discussions) 里讨论
 - 🔧 **工具推荐** — 有好用的 AI 创作工具？分享出来
 - 🎬 **作品推荐** — 发现值得拆解的 AI 影视作品？提交给我们
 
@@ -164,7 +164,7 @@
 4. 推送分支 (`git push origin feature/xxx`)
 5. 提交 **Pull Request**
 
-也可以直接在 [Issues](https://github.com/chenmozhe008/ai-film-creation-daily/issues) 或 [Discussions](https://github.com/chenmozhe008/ai-film-creation-daily/discussions) 中讨论。
+也可以直接在 [Issues](https://github.com/chenmozhe008/ai-film-daily/issues) 或 [Discussions](https://github.com/chenmozhe008/ai-film-daily/discussions) 中讨论。
 
 ---
 
