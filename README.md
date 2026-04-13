@@ -7,6 +7,7 @@
   <p align="center">
     <a href="daily/2026-04-13.md">📋 Latest Issue</a> · 
     <a href="#日报列表--archive">📁 Archive</a> · 
+    <a href="docs/">📚 Docs</a> · 
     <a href="#贡献指南--contributing">🤝 Contribute</a> · 
     <a href="https://github.com/chenmozhe008/ai-film-daily/issues">💬 Issues</a>
   </p>
