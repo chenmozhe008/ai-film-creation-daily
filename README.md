@@ -40,7 +40,7 @@
 ## 系统架构
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph collect[" 📥 数据采集 · 13+ 渠道 "]
         direction TB
         S1["🌐 RSS 官方博客 × 18"]
