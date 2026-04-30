@@ -15,7 +15,12 @@ if [ -z "$FEISHU_SECRET" ]; then
   exit 2
 fi
 
-APP_ID="${FEISHU_APP_ID:-cli_a942282119385cb6}"
+APP_ID="${FEISHU_APP_ID:-}"
+if [ -z "$APP_ID" ]; then
+  echo "FEISHU_APP_ID is required in the cloud environment" >&2
+  exit 2
+fi
+
 BRAND="${FEISHU_BRAND:-feishu}"
 
 printf '%s' "$FEISHU_SECRET" \
