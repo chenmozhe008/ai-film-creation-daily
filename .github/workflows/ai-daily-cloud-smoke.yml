@@ -38,6 +38,7 @@ jobs:
         run: |
           test -s ai-creative-daily/SKILL.md
           test -s ai-creative-daily/scripts/build_x_query_pack.py
+          test -s ai-creative-daily/scripts/quality_smoke.py
           test -s ai-creative-daily/scripts/bootstrap_lark_cli_cloud.sh
           test -s sources/x-lists.json
 
@@ -53,6 +54,11 @@ jobs:
             echo "::error::official_ai_platforms appeared before creator/KOL blocks"
             exit 1
           fi
+
+      - name: Run collection quality smoke
+        run: |
+          python3 ai-creative-daily/scripts/quality_smoke.py --date "$DATE" --format text
+          python3 ai-creative-daily/scripts/quality_smoke.py --date "$DATE" --format json > /tmp/quality-smoke.json
 
       - name: Check Feishu secret presence without printing value
         run: |
@@ -104,9 +110,13 @@ jobs:
             echo
             echo "- Date: $DATE"
             echo "- X query pack: creator-first verified"
+            echo "- Collection quality smoke: hard gates verified"
             echo "- GitHub public files: present"
             echo "- Feishu secret: checked without printing value"
             echo
             echo "## First X Query Blocks"
             grep '^# ' /tmp/x-query-pack.txt | head -20
+            echo
+            echo "## Quality Smoke"
+            cat /tmp/quality-smoke.json
           } >> "$GITHUB_STEP_SUMMARY"
