@@ -9,6 +9,7 @@ on:
       - "ai-creative-daily/references/quality-rubric.md"
       - "ai-creative-daily/scripts/build_x_query_pack.py"
       - "ai-creative-daily/scripts/quality_smoke.py"
+      - "ai-creative-daily/scripts/bootstrap_lark_cli_cloud.sh"
       - ".github/workflows/ai-daily-cloud-smoke.yml"
   schedule:
     # 08:05 Asia/Shanghai. GitHub cron uses UTC.
@@ -108,8 +109,8 @@ jobs:
             exit 0
           fi
           bash ai-creative-daily/scripts/bootstrap_lark_cli_cloud.sh
-          lark-cli docx blocks list --document-id "$FEISHU_DAILY_INDEX_TOKEN" --as bot >/tmp/index-blocks.json
-          test -s /tmp/index-blocks.json
+          lark-cli docs +fetch --doc "$FEISHU_DAILY_INDEX_TOKEN" --as bot >/tmp/index.md
+          test -s /tmp/index.md
           echo "Feishu index readable: true"
 
       - name: Quality smoke summary
