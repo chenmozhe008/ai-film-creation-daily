@@ -1,6 +1,15 @@
 name: AI Daily Cloud Smoke
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "ai-creative-daily/SKILL.md"
+      - "ai-creative-daily/references/source-strategy.md"
+      - "ai-creative-daily/references/quality-rubric.md"
+      - "ai-creative-daily/scripts/build_x_query_pack.py"
+      - "ai-creative-daily/scripts/quality_smoke.py"
+      - ".github/workflows/ai-daily-cloud-smoke.yml"
   schedule:
     # 08:05 Asia/Shanghai. GitHub cron uses UTC.
     - cron: "5 0 * * *"
